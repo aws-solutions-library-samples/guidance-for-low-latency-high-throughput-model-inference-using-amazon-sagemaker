@@ -67,9 +67,9 @@ git clone git@github.com:aws-solutions-library-samples/guidance-for-low-latency-
 
 5. Choose **Next**, **Next**,  acknowledge that AWS CloudFormation might create IAM resources with custom names, then create the Stack.
 
-(Optional) you can use the AWS CLI to deploy the CloudFormation stack as below (replace {userprofile} with your user profile name, i.e. "SageMaker-User-1"):
+(Optional) you can use the AWS CLI to deploy the CloudFormation stack as below (replace SageMaker-User-1 with any custom name you want):
 ```
-aws cloudformation create-stack --stack-name SageMaker-Domain --template-body file://deployment/SageMakerTeamplate.yaml --capabilities "CAPABILITY_NAMED_IAM" --parameters ParameterKey="UserProfileName",ParameterValue={userprofile}
+aws cloudformation create-stack --stack-name SageMaker-Domain --template-body file://deployment/SageMakerTeamplate.yaml --capabilities "CAPABILITY_NAMED_IAM" --parameters ParameterKey="UserProfileName",ParameterValue="SageMaker-User-1"
 ```
 6. Wait until the CloudFormation template completes deployment.
 
