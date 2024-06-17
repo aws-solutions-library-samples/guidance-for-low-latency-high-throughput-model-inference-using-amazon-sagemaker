@@ -1,5 +1,5 @@
 AWSTemplateFormatVersion: "2010-09-09"
-Description: CloudFormation Templates for provisioning SageMaker Studio domain
+Description: Guidance for Low Latency High Throughput Model Inference using Amazon SageMaker(SO9419)
 Parameters:
   UserProfileName:
     Type: String
